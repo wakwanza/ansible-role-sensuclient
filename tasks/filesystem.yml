@@ -1,0 +1,9 @@
+---
+- name: Create the sensu ssl directory
+  action: file path=/etc/sensu/ssl state=directory
+
+- name: Copy the certs over
+  copy: src=files/{{ item }}.pem dest=/etc/sensu/ssl/{{ item }}.pem owner=sensu group=users mode=0644
+  with_items:
+   -"{{ client_cert }}"
+   -"{{ client_key }}"

@@ -1,0 +1,19 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: wakwanza
+  description: Sensu Client node for checks
+  company: "Wakwanza"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 1.4
+  platforms:
+  - name: RedHat/Centos
+    versions:
+    - 6.x
+  - name: Amazon AMI
+    versions:
+    - all
+  categories:
+    - monitoring
+    - system---

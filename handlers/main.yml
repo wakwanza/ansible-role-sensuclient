@@ -1,0 +1,3 @@
+---
+- name: restart sensu
+  command: service sensu-client restart
